@@ -29,14 +29,14 @@ function displayCatImage() {
 
 nextButton.addEventListener("click", () => {
     if (catData.length > 0) {
-        currentCatIndex = (currentCatIndex + 1) % catData.length; // Loop back to the first cat if reached the end
+        currentCatIndex = (currentCatIndex + 1) % catData.length; 
         displayCatImage();
     }
 });
 
 prevButton.addEventListener("click", () => {
     if (catData.length > 0) {
-        currentCatIndex = (currentCatIndex - 1 + catData.length) % catData.length; // Loop back to the last cat if at the beginning
+        currentCatIndex = (currentCatIndex - 1 + catData.length) % catData.length; 
         displayCatImage();
     }
 });
